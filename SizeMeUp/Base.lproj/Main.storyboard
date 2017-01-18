@@ -38,21 +38,44 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-oL-UD1">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="120"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Go Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seX-uz-1r5">
-                                        <rect key="frame" x="121" y="38" width="132" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seX-uz-1r5">
+                                        <rect key="frame" x="282.5" y="15" width="203.5" height="58.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I went green and loved it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFN-iD-ece">
+                                        <rect key="frame" x="291" y="69" width="187" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.39315707230000002" green="1" blue="0.26474388599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="BFN-iD-ece" firstAttribute="top" secondItem="HGa-oL-UD1" secondAttribute="top" constant="69" id="QRB-eV-9oH"/>
                                     <constraint firstAttribute="height" constant="96" id="dlZ-hO-c9B">
                                         <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                                     </constraint>
+                                    <constraint firstItem="BFN-iD-ece" firstAttribute="centerX" secondItem="HGa-oL-UD1" secondAttribute="centerX" id="fqz-IV-CRO"/>
                                     <constraint firstItem="seX-uz-1r5" firstAttribute="centerX" secondItem="HGa-oL-UD1" secondAttribute="centerX" constant="-0.5" id="haC-uc-XAh"/>
-                                    <constraint firstItem="seX-uz-1r5" firstAttribute="top" secondItem="HGa-oL-UD1" secondAttribute="top" constant="38" id="k6K-4h-sKk"/>
+                                    <constraint firstItem="seX-uz-1r5" firstAttribute="top" secondItem="HGa-oL-UD1" secondAttribute="top" constant="15" id="k6K-4h-sKk">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="BFN-iD-ece"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="BFN-iD-ece"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCn-lg-kqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250.40000000000001" y="-81.409295352323838"/>
+            <point key="canvasLocation" x="250" y="-81.4453125"/>
         </scene>
     </scenes>
 </document>
